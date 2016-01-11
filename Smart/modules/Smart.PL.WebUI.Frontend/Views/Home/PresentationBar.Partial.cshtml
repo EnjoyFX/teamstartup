@@ -1,0 +1,30 @@
+﻿<div data-ng-controller="PresentationBarController as presentBar">
+    <div class="startup-markets-wrapper">
+        <h2>Startup Markets</h2>
+        <div class="startup-markets">
+            <div data-ng-repeat="market in presentBar.startupMarkets">{{ market.Name }}</div>
+        </div>
+    </div>
+
+    <div class="job-markets-wrapper">
+        <h2>Job Markets</h2>
+        <div class="job-markets">
+            <div data-ng-repeat="market in presentBar.jobMarkets">{{ market.Name }}</div>
+        </div>
+    </div>
+
+    <div class="notable-investors-wrapper">
+        <h2>Notable Investors</h2>
+        <div class="notable-investors">
+            <div data-ng-repeat="investor in presentBar.notableInvestors">{{ investor.Name }}</div>
+        </div>
+    </div>
+
+    <div class="top-rated-startups-wrapper">
+        <h2>Top Rated Startups</h2>
+        <div class="top-rated-startups">
+            <div data-ng-repeat="startup in presentBar.topRatedStartups">{{ startup.Name }}</div>
+        </div>
+    </div>
+
+</div>

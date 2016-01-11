@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    @RenderSection("HeadStyles", false)
+
+    <script src="~/Scripts/Libs/angularjs/angular.js"></script>
+    <script src="~/Scripts/Libs/jQuery/jquery-2.1.4.js"></script>
+
+    @RenderSection("HeadScripts", false)
+
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+    @RenderSection("FootScripts", false)
+</body>
+</html>

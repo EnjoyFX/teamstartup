@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+
+@section HeadScripts
+{
+
+}
+
+@section FootScripts
+{    
+    <script src="~/Scripts/app/pages/home/home.module.js"></script>
+    <script src="~/Scripts/app/pages/home/home.controller.js"></script>
+    <script src="~/Scripts/app/pages/home/presentation-bar.controller.js"></script>
+    <script src="~/Scripts/app/pages/home/startup-market.service.js"></script>
+    <script src="~/Scripts/app/pages/home/job-market.service.js"></script>
+    <script src="~/Scripts/app/pages/home/investor.service.js"></script>
+    <script src="~/Scripts/app/pages/home/startup.service.js"></script>
+}
+
+<div data-ng-app="homeModule">
+    @Html.Partial("PresentationBar.Partial")
+</div>

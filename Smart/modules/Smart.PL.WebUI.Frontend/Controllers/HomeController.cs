@@ -73,6 +73,16 @@ namespace Smart.PL.WebUI.Frontend.Controllers
             }, JsonRequestBehavior.AllowGet);
         }
 
+        [HttpGet]
+        public ActionResult GetStatistic()
+        {
+            IStatisticService statisticService = this.ServiceLocator.GetInstance<IStatisticService>();
+            return Json(new
+            {
+                statistic = statisticService.GetStatistic()
+            }, JsonRequestBehavior.AllowGet);
+        }
+
         #endregion
 
         #region Helpers

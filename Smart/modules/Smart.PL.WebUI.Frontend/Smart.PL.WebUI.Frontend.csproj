@@ -112,6 +112,8 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\app\pages\home\home.controller.js" />
     <None Include="Scripts\libs\jQuery\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\app\pages\home\statistic.controller.js" />
+    <Content Include="Scripts\app\pages\home\statistic.service.js" />
     <Content Include="Scripts\libs\jQuery\jquery-2.1.4.js" />
     <Content Include="Scripts\libs\jQuery\jquery-2.1.4.min.js" />
     <Content Include="Scripts\libs\angularjs\angular-animate.js" />
@@ -888,6 +890,7 @@
     <Content Include="Scripts\app\pages\home\startup.service.js" />
     <Content Include="Scripts\app\pages\home\home.module.js" />
     <Content Include="Scripts\app\pages\home\investor.service.js" />
+    <Content Include="Views\Home\Statistic.Partial.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -920,6 +923,7 @@
     <Content Include="Scripts\libs\jQuery\jquery-2.1.4.min.map" />
     <Content Include="Views\Home\PresentationBar.Partial.cshtml" />
     <Content Include="Scripts\app\pages\home\presentation-bar.controller.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

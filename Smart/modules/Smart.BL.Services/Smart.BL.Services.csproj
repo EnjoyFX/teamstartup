@@ -44,10 +44,12 @@
     <Compile Include="Abstract\IJobMarketService.cs" />
     <Compile Include="Abstract\IStartupMarketService.cs" />
     <Compile Include="Abstract\IStartupService.cs" />
+    <Compile Include="Abstract\IStatisticService.cs" />
     <Compile Include="Concrete\InvestorService.cs" />
     <Compile Include="Concrete\JobMarketService.cs" />
     <Compile Include="Concrete\StartupMarketService.cs" />
     <Compile Include="Concrete\StartupService.cs" />
+    <Compile Include="Concrete\StatisticService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

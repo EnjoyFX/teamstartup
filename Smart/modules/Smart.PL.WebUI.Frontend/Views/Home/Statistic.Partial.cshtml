@@ -1,0 +1,9 @@
+﻿<div data-ng-controller="StatisticController as controller">
+    <div class="statistic-wrapper">
+        <h2>Statistic</h2>
+        <div class="statistic">
+            <div data-ng-repeat="item in controller.statistic">{{ item.Value }} {{item.Text}}</div>
+        </div>
+    </div>
+
+</div>

@@ -83,6 +83,16 @@ namespace Smart.PL.WebUI.Frontend.Controllers
             }, JsonRequestBehavior.AllowGet);
         }
 
+        [HttpGet]
+        public ActionResult GetActionDescription()
+        {
+            ICallToActionService actionService = this.ServiceLocator.GetInstance<ICallToActionService>();
+            return Json(new
+            {
+                descriptions = actionService.GetDescription()
+            }, JsonRequestBehavior.AllowGet);
+        }
+
         #endregion
 
         #region Helpers

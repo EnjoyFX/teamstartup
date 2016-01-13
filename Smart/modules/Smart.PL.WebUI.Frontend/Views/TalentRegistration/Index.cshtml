@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style type="text/css">
+    .wrapper {
+      border: 1px dashed #95a5a6;
+      height: 56px;
+      margin-top: 16px;
+      border-radius: 4px;
+      position: relative;
+      font-size: 12px;
+      width: 300px;
+    }
+    .wrapper h2 {
+      text-align: center;
+    }
+</style>
+
+<div ng-app="" >
+    <div class="wrap" ng-init="content='talent'">
+        <h1>Registration</h1>
+        <form>
+            <input id="talent" type="radio" name="content" ng-model="content" value="talent">
+            <label for="talent">Talent</label>
+            <br />
+            <input id="companyContractor" type="radio" name="content" ng-model="content" value="companyContractor">
+            <label for="companyContractor">Company Contractor</label>
+        </form>
+
+        <div class="wrapper">
+            <h2 ng-show="content == 'talent'">Talent Registration!</h2>
+            <h2 ng-show="content == 'companyContractor'">Company Contractor Registration!</h2>
+        </div>
+    </div>
+</div>

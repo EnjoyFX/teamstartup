@@ -40,11 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\ICallToActionService.cs" />
     <Compile Include="Abstract\IInvestorService.cs" />
     <Compile Include="Abstract\IJobMarketService.cs" />
     <Compile Include="Abstract\IStartupMarketService.cs" />
     <Compile Include="Abstract\IStartupService.cs" />
     <Compile Include="Abstract\IStatisticService.cs" />
+    <Compile Include="Concrete\CallToActionService.cs" />
     <Compile Include="Concrete\InvestorService.cs" />
     <Compile Include="Concrete\JobMarketService.cs" />
     <Compile Include="Concrete\StartupMarketService.cs" />

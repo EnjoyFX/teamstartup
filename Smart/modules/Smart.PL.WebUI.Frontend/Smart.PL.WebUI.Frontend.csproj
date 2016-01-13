@@ -110,6 +110,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Scripts\app\pages\home\call-to-action.controller.js" />
+    <Content Include="Scripts\app\pages\home\call-to-action.service.js" />
     <Content Include="Scripts\app\pages\home\home.controller.js" />
     <None Include="Scripts\libs\jQuery\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\app\pages\home\statistic.controller.js" />
@@ -899,6 +901,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TalentRegistrationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -924,6 +927,8 @@
     <Content Include="Views\Home\PresentationBar.Partial.cshtml" />
     <Content Include="Scripts\app\pages\home\presentation-bar.controller.js" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\_CallToAction.cshtml" />
+    <Content Include="Views\TalentRegistration\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

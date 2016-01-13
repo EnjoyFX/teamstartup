@@ -1,0 +1,18 @@
+﻿<div data-ng-controller="CallToActionController as controller">
+    <div class="call-to-action-wrapper">
+        <h2>Get Started</h2>
+        <div class="call-to-action">
+            <div >{{ controller.descriptions.LaunchStartupDescription }}</div>
+            <div><a href="#">Launch Startup</a></div>
+            <br />
+            <div>{{ controller.descriptions.FindYourJobDescription }}</div>
+            <div><a href='@Url.Action("Index", "TalentRegistration")'>Find your Job</a></div>
+            <br />
+            <div>{{ controller.descriptions.PostJobDescription }}</div>
+            <div><a href="#">Post a Job</a></div>
+            <br />
+            <div>{{ controller.descriptions.StartToInvestDescription }}</div>
+            <div><a href="#">Start to Invest</a></div>
+        </div>
+    </div>
+</div>

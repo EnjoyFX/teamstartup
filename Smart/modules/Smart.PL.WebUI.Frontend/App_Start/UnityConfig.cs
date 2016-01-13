@@ -22,6 +22,7 @@ namespace Smart.PL.WebUI.Frontend
             container.RegisterType<IInvestorService, InvestorService>();
             container.RegisterType<IStartupService, StartupService>();
             container.RegisterType<IStatisticService, StatisticService>();
+            container.RegisterType<ICallToActionService, CallToActionService>();
 
             container.RegisterType<IServiceLocator, UnityServiceLocator>();
             

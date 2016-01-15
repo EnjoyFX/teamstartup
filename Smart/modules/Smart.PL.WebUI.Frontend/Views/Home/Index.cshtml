@@ -1,6 +1,6 @@
 ﻿@{
     ViewBag.Title = "Home";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/Layout.cshtml";
     
 }
 
@@ -25,7 +25,7 @@
 }
 
 <div data-ng-app="homeModule">
-    @Html.Partial("PresentationBar.Partial")
-    @Html.Partial("Statistic.Partial")
+    @Html.Partial("_PresentationBar")
+    @Html.Partial("_Statistic")
     @Html.Partial("_CallToAction")
 </div>

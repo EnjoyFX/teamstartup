@@ -56,6 +56,7 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Config\karma.conf.js" />
     <Content Include="css\jasmine.css" />
     <Content Include="Scripts\app\pages\home\home.controller.spec.js" />
     <Content Include="Scripts\app\pages\home\presentation-bar.controller.spec.js" />

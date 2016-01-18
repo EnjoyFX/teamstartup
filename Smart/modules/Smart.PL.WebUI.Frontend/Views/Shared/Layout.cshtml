@@ -2,11 +2,16 @@
     Layout = null;
 }
 
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Develop future together!</title>
+
+    <link href="~/Styles/style.css" rel="stylesheet" />
 
     @RenderSection("HeadStyles", false)
 
@@ -18,7 +23,13 @@
 </head>
 <body>
     <div>
+        @RenderSection("Header", false)
+    </div>
+    <div>
         @RenderBody()
+    </div>
+    <div>
+        @RenderSection("Footer", false)
     </div>
     @RenderSection("FootScripts", false)
 </body>

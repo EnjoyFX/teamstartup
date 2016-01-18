@@ -892,6 +892,12 @@
     <Content Include="Scripts\app\pages\home\startup.service.js" />
     <Content Include="Scripts\app\pages\home\home.module.js" />
     <Content Include="Scripts\app\pages\home\investor.service.js" />
+    <Content Include="Styles\images\ico_mail.png" />
+    <Content Include="Styles\images\ico_pcc.png" />
+    <Content Include="Styles\images\ico_twiter.png" />
+    <Content Include="Styles\images\logo.gif" />
+    <Content Include="Styles\images\magnifying_glass.gif" />
+    <Content Include="Styles\style.css" />
     <Content Include="Views\Home\_Statistic.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Views\Shared\Layout.cshtml" />
@@ -928,6 +934,8 @@
     <Content Include="Scripts\app\pages\home\presentation-bar.controller.js" />
     <Content Include="Views\Home\_CallToAction.cshtml" />
     <Content Include="Views\TalentRegistration\Index.cshtml" />
+    <Content Include="Views\Home\_Header.cshtml" />
+    <Content Include="Views\Home\_Footer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -936,11 +944,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="App_Data\images\" />
     <Folder Include="Code\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\app\shared\" />
-    <Folder Include="Styles\" />
+    <Folder Include="Styles\fonts\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Smart.BL.Entities\Smart.BL.Entities.csproj">

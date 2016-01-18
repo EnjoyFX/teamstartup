@@ -24,8 +24,18 @@
     <script src="~/Scripts/app/pages/home/call-to-action.controller.js"></script>
 }
 
+@section Header
+{
+    @Html.Partial("_Header")
+}
+
 <div data-ng-app="homeModule">
     @Html.Partial("_PresentationBar")
     @Html.Partial("_Statistic")
     @Html.Partial("_CallToAction")
 </div>
+
+@section Footer
+{
+    @Html.Partial("_Footer")
+}

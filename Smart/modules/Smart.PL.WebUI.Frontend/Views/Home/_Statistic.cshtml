@@ -1,9 +1,14 @@
-﻿<div data-ng-controller="StatisticController as controller">
-    <div class="statistic-wrapper">
-        <h2>Statistic</h2>
-        <div class="statistic">
-            <div data-ng-repeat="item in controller.statistic">{{ item.Value }} {{item.Text}}</div>
+﻿<div class="content" id="main_statistic" data-ng-controller="StatisticController as controller">
+    <div id="left_text">
+        <div data-ng-repeat="item in controller.statisticLeft">
+            <span class="blue_text">{{ item.Value | currency:"$":0 }}</span> {{item.Text}}
         </div>
     </div>
-
+    <div id="bottom_started">Get started</div>
+    <div id="right_text">
+        <div data-ng-repeat="item in controller.statisticRight">
+            <span class="blue_text">{{ item.Value | currency:"$":0 }}</span> {{item.Text}}
+        </div>
+    </div>
+    <div class="row"></div>
 </div>

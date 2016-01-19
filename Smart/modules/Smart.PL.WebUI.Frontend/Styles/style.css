@@ -229,7 +229,7 @@ a:link, a:visited {
 #left_text, #right_text
 {
 	display: block;
-	width: 360px;
+	/*width: 360px;*/
 	position: relative;	
 	float: left;
 	font-size: 13px;
@@ -974,4 +974,8 @@ div .two_investor .invest_midle_text
 .colum_link
 {
 	font: 300 18px / 24px Roboto;
+}
+
+.link-button {
+    text-decoration: none;
 }

@@ -1,18 +1,52 @@
-﻿<div data-ng-controller="CallToActionController as controller">
-    <div class="call-to-action-wrapper">
-        <h2>Get Started</h2>
-        <div class="call-to-action">
-            <div >{{ controller.descriptions.LaunchStartupDescription }}</div>
-            <div><a href="#">Launch Startup</a></div>
-            <br />
-            <div>{{ controller.descriptions.FindYourJobDescription }}</div>
-            <div><a href='@Url.Action("Index", "TalentRegistration")'>Find your Job</a></div>
-            <br />
-            <div>{{ controller.descriptions.PostJobDescription }}</div>
-            <div><a href="#">Post a Job</a></div>
-            <br />
-            <div>{{ controller.descriptions.StartToInvestDescription }}</div>
-            <div><a href="#">Start to Invest</a></div>
+﻿<div class="content" id="get_started_area" data-ng-controller="CallToActionController as controller">
+    <div class="center">
+        <div class="row"></div>
+        <div class="title_area">GET STARTED</div>
+        <div class="botton_all">Learn more...</div>
+        <div class="row"></div>
+        <div class="botton_started_categories butt1">
+            {{ controller.descriptions.LaunchStartupDescription }}
+        </div>
+        <div class="botton_started_categories">
+            <div class="botton_block_get_start butt2">
+                <a href='@Url.Action("Index", "TalentRegistration")' class="link-button">Find your Job</a>
+            </div>
+        </div>
+        <div class="botton_started_categories butt3">
+            {{ controller.descriptions.FindYourJobDescription }}
+        </div>
+        <div class="botton_started_categories">
+            <div class="botton_block_get_start butt4">
+                Start to Invest
+            </div>
+        </div>
+        <div class="bar_triangle">
+            <div class="triangle-down trian1">	</div>
+            <div class="triangle-up trian2">	</div>
+            <div class="triangle-down trian3">	</div>
+            <div class="triangle-up trian4">	</div>
+        </div>
+        <div class="botton_started_categories">
+            <div class="botton_block_get_start butt1">
+                Launch Startup
+            </div>
+        </div>
+
+        <div class="botton_started_categories butt2">
+            {{ controller.descriptions.PostJobDescription }}
+        </div>
+        <div class="botton_started_categories">
+            <div class="botton_block_get_start butt3">
+                Post a Job
+            </div>
         </div>
     </div>
+    <div class="botton_started_categories butt4">
+        {{ controller.descriptions.StartToInvestDescription }}
+    </div>
+
+    <div class="row"></div>
+    You are in the world’s marketplace where developers find or post a job,
+    join R&amp;D teams, and share  own innovative ideas to launch startup companies.
+    <div class="row"></div>
 </div>

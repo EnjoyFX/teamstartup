@@ -1,6 +1,6 @@
 @font-face {
     font-family:Roboto; /* Гарнитура шрифта */
-    src: url(../fonts/roboto.ttf); 
+    src: url(../styles/fonts/roboto.ttf); 
 }
 * 
 {
@@ -91,7 +91,7 @@ a:link, a:visited {
 	clear: both;
 	display: block;
 	position: relative;
-	background:url('../pix/main_photo1.jpg') no-repeat;
+	background:url('../app_data/images/main_photo1.jpg') no-repeat;
 	height: 484px;
 	margin: 3px auto;
 }

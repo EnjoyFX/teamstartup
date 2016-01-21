@@ -114,8 +114,12 @@
     <Content Include="Scripts\app\pages\home\call-to-action.service.js" />
     <Content Include="Scripts\app\pages\home\home.controller.js" />
     <None Include="Scripts\libs\jQuery\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\app\pages\home\popular-startup.controller.js" />
+    <Content Include="Scripts\app\pages\home\popular-startup.service.js" />
     <Content Include="Scripts\app\pages\home\statistic.controller.js" />
     <Content Include="Scripts\app\pages\home\statistic.service.js" />
+    <Content Include="Scripts\app\pages\home\tranding-startups.controller.js" />
+    <Content Include="Scripts\app\pages\home\tranding-startups.service.js" />
     <Content Include="Scripts\libs\jQuery\jquery-2.1.4.js" />
     <Content Include="Scripts\libs\jQuery\jquery-2.1.4.min.js" />
     <Content Include="Scripts\libs\angularjs\angular-animate.js" />
@@ -897,6 +901,17 @@
     <Content Include="Styles\images\ico_twiter.png" />
     <Content Include="Styles\images\logo.gif" />
     <Content Include="Styles\images\magnifying_glass.gif" />
+    <Content Include="Styles\images\tmp\face1.jpg" />
+    <Content Include="Styles\images\tmp\usa.jpg" />
+    <Content Include="Styles\images\tmp\likes.png" />
+    <Content Include="Styles\images\tmp\startup1.jpg" />
+    <Content Include="Styles\images\tmp\startup2.jpg" />
+    <Content Include="Styles\images\tmp\startup3.jpg" />
+    <Content Include="Styles\images\tmp\startup4.jpg" />
+    <Content Include="Styles\images\tmp\startup5.jpg" />
+    <Content Include="Styles\images\tmp\startup6.jpg" />
+    <Content Include="Styles\images\tmp\startup7.jpg" />
+    <Content Include="Styles\images\tmp\startup8.jpg" />
     <Content Include="Styles\style.css" />
     <Content Include="Views\Home\_Statistic.cshtml" />
     <Content Include="Web.config" />
@@ -936,6 +951,8 @@
     <Content Include="Views\TalentRegistration\Index.cshtml" />
     <Content Include="Views\Home\_Header.cshtml" />
     <Content Include="Views\Home\_Footer.cshtml" />
+    <Content Include="Views\Home\_TrandingStartups.cshtml" />
+    <Content Include="Views\Home\_PopularStartups.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

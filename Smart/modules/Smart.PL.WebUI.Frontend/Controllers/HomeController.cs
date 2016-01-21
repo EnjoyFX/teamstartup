@@ -93,6 +93,27 @@ namespace Smart.PL.WebUI.Frontend.Controllers
             }, JsonRequestBehavior.AllowGet);
         }
 
+        [HttpGet]
+        public ActionResult GetTrandingStartups()
+        {
+            ITrandingStartupService service = this.ServiceLocator.GetInstance<ITrandingStartupService>();
+            return Json(new
+            {
+                startups = service.GetTrandingStartups()
+            }, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
+        public ActionResult GetPopularStartups()
+        {
+            IPopularStartupService service = this.ServiceLocator.GetInstance<IPopularStartupService>();
+            return Json(new
+            {
+                startups = service.GetPopularStartups()
+            }, JsonRequestBehavior.AllowGet);
+        }
+
+
         #endregion
 
         #region Helpers

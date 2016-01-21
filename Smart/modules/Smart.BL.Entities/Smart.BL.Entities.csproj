@@ -43,10 +43,13 @@
     <Compile Include="CallToActionEntity.cs" />
     <Compile Include="JobMarketEntity.cs" />
     <Compile Include="InvestorEntity.cs" />
+    <Compile Include="PopularStartup.cs" />
     <Compile Include="StartupEntity.cs" />
+    <Compile Include="Startuper.cs" />
     <Compile Include="StartupMarketEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StatisticEntity.cs" />
+    <Compile Include="TrandingStartup.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

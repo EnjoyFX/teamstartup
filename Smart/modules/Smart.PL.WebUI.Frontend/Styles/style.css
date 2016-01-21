@@ -368,11 +368,6 @@ div.butt4
 	margin-top: 20px;
 }
 
-#startup_popular_area
-{
-	border-bottom: 13px solid #e0dede;
-}
-
 .botton_all
 {
 	border:4px solid #85aefe;
@@ -978,4 +973,8 @@ div .two_investor .invest_midle_text
 
 .link-button {
     text-decoration: none;
+}
+
+#notib_investors_area {
+    border-top: 13px solid #e0dede;
 }

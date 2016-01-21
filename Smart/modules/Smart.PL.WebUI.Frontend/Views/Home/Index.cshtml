@@ -22,6 +22,10 @@
     <script src="~/Scripts/app/pages/home/statistic.controller.js"></script>
     <script src="~/Scripts/app/pages/home/call-to-action.service.js"></script>
     <script src="~/Scripts/app/pages/home/call-to-action.controller.js"></script>
+    <script src="~/Scripts/app/pages/home/tranding-startups.service.js"></script>
+    <script src="~/Scripts/app/pages/home/tranding-startups.controller.js"></script>
+    <script src="~/Scripts/app/pages/home/popular-startup.service.js"></script>
+    <script src="~/Scripts/app/pages/home/popular-startup.controller.js"></script>
 }
 
 @section Header
@@ -33,9 +37,55 @@
     @Html.Partial("_PresentationBar")
     @Html.Partial("_Statistic")
     @Html.Partial("_CallToAction")
-</div>
+    <div class="row"></div>
+    <div class="content" id="startup_area">
+        <div class="center">
+            <div class="row"></div>
+            <div class="title_area">SMARTUP CELL</div>
+            <div class="row"></div>
+            <div class="title_bold_area">TRENDING STARTUPS</div>
+            <div class="botton_all">Learn more...</div>
+            <div class="row"></div>
+            @Html.Partial("_TrandingStartups")
+        </div>
+    </div>
+    <div class="row"></div>
+    <div class="content" id="startup_popular_area">
+        <div class="center">
+            <div class="row"></div>
+            <div class="title_bold_area">POPULAR STARTUPS</div>
+            <div class="botton_all">Learn more...</div>
+            <div class="row"></div>
+            @Html.Partial("_PopularStartups")
+        </div>
+    </div>
+    <div class="row"></div>
+    <div class="content" id="notib_investors_area">
+        <div class="center">
+            <div class="row"></div>
+            <div class="title_area">NOTIBLE INVESTORS</div>
+            <div class="botton_all">Learn more...</div>
+            <div class="row"></div>
 
-@section Footer
+            @*Notible Investors*@
+
+        </div>
+    </div>
+    <div class="row"></div>
+    <div class="content" id="talents_area">
+        <div class="center">
+            <div class="row"></div>
+            <div class="title_area">TALENTS CELLS</div>
+            <div class="row"></div>
+            <div class="title_bold_area">TOP RATED TALENTS</div>
+            <div class="botton_all">Learn more...</div>
+            <div class="row"></div>
+            @*Talents*@
+        </div>
+    </div>
+
+
+            @section Footer
 {
-    @Html.Partial("_Footer")
-}
+                @Html.Partial("_Footer")
+            }

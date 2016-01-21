@@ -326,7 +326,14 @@ div.butt4
 	background:#9ebcf6;
 }
 
-#presentation_bar_area .center, #get_started_area .center, #startup_area .center, #startup_popular_area .center, #notib_investors_area .center, #main_statistic .center, #footer_content .center
+#presentation_bar_area .center, 
+#get_started_area .center, 
+#startup_area .center, 
+#startup_popular_area .center, 
+#notib_investors_area .center, 
+#main_statistic .center, 
+#talents_area .center,
+#footer_content .center
 {
 	margin: 0px auto;
 	display: block;

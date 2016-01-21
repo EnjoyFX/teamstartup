@@ -113,6 +113,16 @@ namespace Smart.PL.WebUI.Frontend.Controllers
             }, JsonRequestBehavior.AllowGet);
         }
 
+        [HttpGet]
+        public ActionResult GetTalents()
+        {
+            ITalentService service = this.ServiceLocator.GetInstance<ITalentService>();
+            return Json(new
+            {
+                talents = service.GetTalents()
+            }, JsonRequestBehavior.AllowGet);
+        }
+
 
         #endregion
 

@@ -25,6 +25,7 @@ namespace Smart.PL.WebUI.Frontend
             container.RegisterType<ICallToActionService, CallToActionService>();
             container.RegisterType<ITrandingStartupService, TrandingStartupService>();
             container.RegisterType<IPopularStartupService, PopularStartupService >();
+            container.RegisterType<ITalentService, TalentService>();
 
             container.RegisterType<IServiceLocator, UnityServiceLocator>();
             

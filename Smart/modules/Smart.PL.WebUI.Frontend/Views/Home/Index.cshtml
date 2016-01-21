@@ -26,6 +26,8 @@
     <script src="~/Scripts/app/pages/home/tranding-startups.controller.js"></script>
     <script src="~/Scripts/app/pages/home/popular-startup.service.js"></script>
     <script src="~/Scripts/app/pages/home/popular-startup.controller.js"></script>
+    <script src="~/Scripts/app/pages/home/talent.service.js"></script>
+    <script src="~/Scripts/app/pages/home/talent.controller.js"></script>
 }
 
 @section Header
@@ -80,7 +82,7 @@
             <div class="title_bold_area">TOP RATED TALENTS</div>
             <div class="botton_all">Learn more...</div>
             <div class="row"></div>
-            @*Talents*@
+            @Html.Partial("_Talents")
         </div>
     </div>
 

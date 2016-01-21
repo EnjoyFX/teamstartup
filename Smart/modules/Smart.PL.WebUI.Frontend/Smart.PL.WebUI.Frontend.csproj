@@ -118,6 +118,8 @@
     <Content Include="Scripts\app\pages\home\popular-startup.service.js" />
     <Content Include="Scripts\app\pages\home\statistic.controller.js" />
     <Content Include="Scripts\app\pages\home\statistic.service.js" />
+    <Content Include="Scripts\app\pages\home\talent.controller.js" />
+    <Content Include="Scripts\app\pages\home\talent.service.js" />
     <Content Include="Scripts\app\pages\home\tranding-startups.controller.js" />
     <Content Include="Scripts\app\pages\home\tranding-startups.service.js" />
     <Content Include="Scripts\libs\jQuery\jquery-2.1.4.js" />
@@ -902,6 +904,7 @@
     <Content Include="Styles\images\logo.gif" />
     <Content Include="Styles\images\magnifying_glass.gif" />
     <Content Include="Styles\images\tmp\face1.jpg" />
+    <Content Include="Styles\images\tmp\talent1.png" />
     <Content Include="Styles\images\tmp\usa.jpg" />
     <Content Include="Styles\images\tmp\likes.png" />
     <Content Include="Styles\images\tmp\startup1.jpg" />
@@ -914,6 +917,7 @@
     <Content Include="Styles\images\tmp\startup8.jpg" />
     <Content Include="Styles\style.css" />
     <Content Include="Views\Home\_Statistic.cshtml" />
+    <Content Include="Views\Home\_Talents.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Views\Shared\Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />

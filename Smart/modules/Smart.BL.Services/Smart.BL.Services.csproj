@@ -47,6 +47,7 @@
     <Compile Include="Abstract\IStartupMarketService.cs" />
     <Compile Include="Abstract\IStartupService.cs" />
     <Compile Include="Abstract\IStatisticService.cs" />
+    <Compile Include="Abstract\ITalentService.cs" />
     <Compile Include="Abstract\ITrandingStartupService.cs" />
     <Compile Include="Concrete\CallToActionService.cs" />
     <Compile Include="Concrete\InvestorService.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="Concrete\StartupMarketService.cs" />
     <Compile Include="Concrete\StartupService.cs" />
     <Compile Include="Concrete\StatisticService.cs" />
+    <Compile Include="Concrete\TalentService.cs" />
     <Compile Include="Concrete\TrandingStartupService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -43,7 +43,7 @@ body
 
 .small_header_text
 {
-	margin: 4px 0px 0px -25px;
+	margin: 8px 0px 0px -25px;
 	width:100%;	
 	text-align:right;
 }
@@ -60,7 +60,7 @@ a:link, a:visited {
 
 .header_text
 {
-	margin: 4px 0px 0px 10px;
+	margin: 8px 0px 0px 10px;
 	float:left;
 	font-size:18px;
 	width:40%;
@@ -78,6 +78,15 @@ a:link, a:visited {
 	position:relative;
 	height: 40px;
 	float:left;
+}
+
+.find_area
+{
+	display:block;
+	position:relative;
+	height: 40px;
+	float:left;
+	margin: 0 5px;
 }
 
 #magnifying_glass
@@ -380,7 +389,7 @@ div.butt4
 	width: 160px;
 	height: 20px;
 	display: block;
-	margin: 4px 0px 4px 900px;
+	margin: 4px 0px 4px 928px;
 	text-align: center;
 	padding-bottom: 3px;
 	font-size: 18px;
@@ -432,6 +441,7 @@ div.butt4
 	width: 230px;
 	height: 55px;
 	margin: 80px auto;
+	margin-top: 91px;
 	text-align: center;
 	font-size: 30px;
 	font-family:Helvetica, sans-serif;
@@ -682,7 +692,7 @@ div.trian4
 	display: block;	
 	background:rgba(38, 200, 241, 0.8);
 	border-radius: 2px;
-	margin:1px 5px;
+	margin:1px 2px;
 	padding:0px 7px;
 	font-weight: lighter;	
 }
@@ -857,24 +867,27 @@ div .two_investor .invest_midle_text
 {
 	display: block;
 	float: left;
-	width: 123px;
+	width: 130px;
 	margin-left: 13px;
     font: 500 14px Roboto;
 }
 .talent_percent_success
 {
 	color: #0000ff;
-    font: 700 14px Roboto;			
+    font: 700 14px Roboto;
+    display: block;		
 }
 .talent_see
 {
-	width: 75px;
-	height: 20px;
+	width: 95px;
+	height: 18px;
 	display: block;
-	border-radius: 2px;
+	border-radius: 4px;
 	background: #1cf50a;
 	font-weight: 900;
-	margin: 3px 0 3px 180px;
+	text-align: center;
+	margin: 0px 0px 3px 159px;
+	padding-top: 2px;
 }
 .statistic
 {
@@ -915,10 +928,12 @@ div .two_investor .invest_midle_text
 {
 	background: #cbc8a3;
 	display: block;
-	width: 138px;
-	border-radius: 5px;
-	margin-left:113px;
+	padding: 2px 2px;
+	border-radius: 2px;
+	margin-left:110px;
+	margin-right:10px;	
 	margin-top: 3px;
+	text-align: center;
 }
 
 .experienced_in

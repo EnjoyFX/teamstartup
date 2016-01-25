@@ -925,6 +925,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="Code\Repositories\TempImageRepository.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TalentRegistrationController.cs" />
     <Compile Include="Global.asax.cs">
@@ -957,6 +958,7 @@
     <Content Include="Views\Home\_Footer.cshtml" />
     <Content Include="Views\Home\_TrandingStartups.cshtml" />
     <Content Include="Views\Home\_PopularStartups.cshtml" />
+    <Content Include="Views\Home\_StartupMarkets.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -965,8 +967,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\images\" />
-    <Folder Include="Code\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="DataContent\images\consortiums\" />
+    <Folder Include="DataContent\images\contractors\" />
+    <Folder Include="DataContent\images\investors\" />
+    <Folder Include="DataContent\images\job-markets\" />
+    <Folder Include="DataContent\images\startup-markets\" />
+    <Folder Include="DataContent\images\startups\" />
+    <Folder Include="DataContent\images\talents\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\app\shared\" />
     <Folder Include="Styles\fonts\" />
@@ -979,6 +987,10 @@
     <ProjectReference Include="..\Smart.BL.Services\Smart.BL.Services.csproj">
       <Project>{55c1d43f-637a-418d-95e2-a0a5acb9774d}</Project>
       <Name>Smart.BL.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Smart.DAL.ContentStorage\Smart.DAL.ContentStorage.csproj">
+      <Project>{471c55f5-c659-4dd2-9ff1-61a37099b305}</Project>
+      <Name>Smart.DAL.ContentStorage</Name>
     </ProjectReference>
     <ProjectReference Include="..\Smart.PL.WebUI\Smart.PL.WebUI.csproj">
       <Project>{c4ed4f8a-14f8-4c0d-980e-59bcf3a78c8f}</Project>

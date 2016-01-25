@@ -4,6 +4,8 @@ using Unity.Mvc5;
 using Microsoft.Practices.ServiceLocation;
 using Smart.BL.Services.Abstract;
 using Smart.BL.Services.Concrete;
+using Smart.DAL.ContentStorage.Abstract;
+using Smart.PL.WebUI.Frontend.Code.Repositories;
 
 namespace Smart.PL.WebUI.Frontend
 {
@@ -12,11 +14,13 @@ namespace Smart.PL.WebUI.Frontend
         public static void RegisterComponents()
         {
 			var container = new UnityContainer();
-            
+
             // register all your components with the container here
             // it is NOT necessary to register your controllers
-            
-            
+
+
+            container.RegisterType<IImageRepository, TempImageRepository>();
+
             container.RegisterType<IStartupMarketService, StartupMarketService>();
             container.RegisterType<IJobMarketService, JobMarketService>();
             container.RegisterType<IInvestorService, InvestorService>();

@@ -4,6 +4,8 @@ using Smart.BL.Services.Abstract;
 using Smart.BL.Services.Concrete;
 using System.Collections.Generic;
 using Smart.BL.Entities;
+using Smart.DAL.ContentStorage.Abstract;
+using Moq;
 
 namespace Smart.BL.Services.Test.Concrete
 {
@@ -15,7 +17,8 @@ namespace Smart.BL.Services.Test.Concrete
         [TestInitialize]
         public void Initialization()
         {
-            this._startupMarketService = new StartupMarketService();
+            var imageRepositoryMock = new Mock<IImageRepository>();
+            this._startupMarketService = new StartupMarketService(imageRepositoryMock.Object);
         }
 
         [TestMethod]

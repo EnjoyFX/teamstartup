@@ -66,6 +66,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\modules\Smart.DAL.ContentStorage\Smart.DAL.ContentStorage.csproj">
+      <Project>{471c55f5-c659-4dd2-9ff1-61a37099b305}</Project>
+      <Name>Smart.DAL.ContentStorage</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

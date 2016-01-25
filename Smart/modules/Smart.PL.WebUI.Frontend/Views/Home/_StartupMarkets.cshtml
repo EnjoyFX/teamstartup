@@ -1,0 +1,16 @@
+﻿<div class="center" ng-init="classes = ['butt1', 'butt0', 'butt3', 'butt0', 'butt0', 'butt2', 'butt0', 'butt4']">
+    <div class="row"></div>
+    <div class="title_area">STURTUPS MARKETS</div>
+    <div class="botton_all">All Markets</div>
+    <div class="row"></div>
+
+
+    <div data-ng-repeat="market in presentBar.startupMarkets" ng-class="['bottom_categories', classes[$index]]">
+        <img ng-src="{{ market.IconUrl}}" alt="{{ market.Name }}" />
+        <div class="vert_text_categories">
+            {{ market.Name }}
+        </div>        
+    </div>
+
+</div>
+<div class="row"></div>

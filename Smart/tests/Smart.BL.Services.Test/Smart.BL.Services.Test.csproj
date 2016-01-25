@@ -35,6 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq, Version=4.2.1510.2205, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -58,7 +62,9 @@
     <Compile Include="Concrete\StartupServiceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\modules\Smart.BL.Entities\Smart.BL.Entities.csproj">
       <Project>{a7ec539a-404b-4733-8142-5c4749a25e6b}</Project>
@@ -67,6 +73,10 @@
     <ProjectReference Include="..\..\modules\Smart.BL.Services\Smart.BL.Services.csproj">
       <Project>{55c1d43f-637a-418d-95e2-a0a5acb9774d}</Project>
       <Name>Smart.BL.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\modules\Smart.DAL.ContentStorage\Smart.DAL.ContentStorage.csproj">
+      <Project>{471c55f5-c659-4dd2-9ff1-61a37099b305}</Project>
+      <Name>Smart.DAL.ContentStorage</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

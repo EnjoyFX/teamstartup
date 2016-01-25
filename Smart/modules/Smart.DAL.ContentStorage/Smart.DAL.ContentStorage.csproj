@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{55C1D43F-637A-418D-95E2-A0A5ACB9774D}</ProjectGuid>
+    <ProjectGuid>{471C55F5-C659-4DD2-9FF1-61A37099B305}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Smart.BL.Services</RootNamespace>
-    <AssemblyName>Smart.BL.Services</AssemblyName>
+    <RootNamespace>Smart.DAL.ContentStorage</RootNamespace>
+    <AssemblyName>Smart.DAL.ContentStorage</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,35 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\ICallToActionService.cs" />
-    <Compile Include="Abstract\IInvestorService.cs" />
-    <Compile Include="Abstract\IJobMarketService.cs" />
-    <Compile Include="Abstract\IPopularStartupService.cs" />
-    <Compile Include="Abstract\IStartupMarketService.cs" />
-    <Compile Include="Abstract\IStartupService.cs" />
-    <Compile Include="Abstract\IStatisticService.cs" />
-    <Compile Include="Abstract\ITalentService.cs" />
-    <Compile Include="Abstract\ITrandingStartupService.cs" />
-    <Compile Include="Concrete\CallToActionService.cs" />
-    <Compile Include="Concrete\InvestorService.cs" />
-    <Compile Include="Concrete\JobMarketService.cs" />
-    <Compile Include="Concrete\PopularStartupService.cs" />
-    <Compile Include="Concrete\StartupMarketService.cs" />
-    <Compile Include="Concrete\StartupService.cs" />
-    <Compile Include="Concrete\StatisticService.cs" />
-    <Compile Include="Concrete\TalentService.cs" />
-    <Compile Include="Concrete\TrandingStartupService.cs" />
+    <Compile Include="Abstract\IImageReposotory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Smart.BL.Entities\Smart.BL.Entities.csproj">
-      <Project>{a7ec539a-404b-4733-8142-5c4749a25e6b}</Project>
-      <Name>Smart.BL.Entities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Smart.DAL.ContentStorage\Smart.DAL.ContentStorage.csproj">
-      <Project>{471c55f5-c659-4dd2-9ff1-61a37099b305}</Project>
-      <Name>Smart.DAL.ContentStorage</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

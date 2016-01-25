@@ -36,8 +36,8 @@
 }
 
 <div data-ng-app="homeModule">
-    @Html.Partial("_PresentationBar")
     @Html.Partial("_Statistic")
+    @Html.Partial("_PresentationBar")
     @Html.Partial("_CallToAction")
     <div class="row"></div>
     <div class="content" id="startup_area">
@@ -87,7 +87,7 @@
     </div>
 
 
-            @section Footer
+@section Footer
 {
-                @Html.Partial("_Footer")
-            }
+    @Html.Partial("_Footer")
+}

@@ -1,10 +1,10 @@
 ﻿<div data-ng-controller="TalentsController as controller">
     <div class="talents_cell" data-ng-repeat="talent in controller.talents">
-        <img class="img_talents" ng-src="~/Styles/images/tmp/{{talent.Photo}}">
+        <img class="img_talents" ng-src="{{talent.PhotoUrl}}">
         <div class="talent_title_text">
             Ronald Brin
         </div>
-        <img class="flag_startup" ng-src="~/Styles/images/tmp/{{talent.Country | lowercase}}.jpg">
+        <img class="flag_startup" ng-src="~/Styles/images/{{talent.Country | lowercase}}.jpg">
         <div class="row"></div>
         <div class="talent_skil_text">
             {{talent.Title}}

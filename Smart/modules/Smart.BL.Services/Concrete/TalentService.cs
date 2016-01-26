@@ -1,21 +1,26 @@
 ﻿using Smart.BL.Services.Abstract;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Smart.BL.Entities;
+using Smart.DAL.ContentStorage.Abstract;
 
 namespace Smart.BL.Services.Concrete
 {
     public class TalentService : ITalentService
     {
+        private readonly IImageRepository _imageRepository;
+
+        public TalentService(IImageRepository imageRepository)
+        {
+            _imageRepository = imageRepository;
+        }
         public IEnumerable<Talent> GetTalents()
         {
+            string talentCategory = "talents";
+
             return new List<Talent> {
                 new Talent {
                     Name = "Ronald Brin",
-                    Photo = "talent1.png",
+                    PhotoUrl = _imageRepository.GetUrl(talentCategory, "talent1.png"),
                     Country = "USA",
                     Title = "Search Arvhitect Guru UX Designer",
                     Rate = 80,
@@ -32,7 +37,7 @@ namespace Smart.BL.Services.Concrete
                 },
                  new Talent {
                     Name = "Ronald Brin",
-                    Photo = "talent1.png",
+                    PhotoUrl = _imageRepository.GetUrl(talentCategory, "talent1.png"),
                     Country = "USA",
                     Title = "Search Arvhitect Guru UX Designer",
                     Rate = 85,
@@ -49,7 +54,7 @@ namespace Smart.BL.Services.Concrete
                 },
                   new Talent {
                     Name = "Ronald Brin",
-                    Photo = "talent1.png",
+                    PhotoUrl = _imageRepository.GetUrl(talentCategory, "talent1.png"),
                     Country = "USA",
                     Title = "Search Arvhitect Guru UX Designer",
                     Rate = 90,
@@ -66,7 +71,7 @@ namespace Smart.BL.Services.Concrete
                 },
                    new Talent {
                     Name = "Ronald Brin",
-                    Photo = "talent1.png",
+                    PhotoUrl = _imageRepository.GetUrl(talentCategory, "talent1.png"),
                     Country = "USA",
                     Title = "Search Arvhitect Guru UX Designer",
                     Rate = 100,

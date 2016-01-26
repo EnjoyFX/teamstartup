@@ -96,7 +96,7 @@ namespace Smart.PL.WebUI.Frontend.Controllers
         [HttpGet]
         public ActionResult GetTrandingStartups()
         {
-            ITrandingStartupService service = this.ServiceLocator.GetInstance<ITrandingStartupService>();
+            IStartupService service = this.ServiceLocator.GetInstance<IStartupService>();
             return Json(new
             {
                 startups = service.GetTrandingStartups()
@@ -106,7 +106,7 @@ namespace Smart.PL.WebUI.Frontend.Controllers
         [HttpGet]
         public ActionResult GetPopularStartups()
         {
-            IPopularStartupService service = this.ServiceLocator.GetInstance<IPopularStartupService>();
+            IStartupService service = this.ServiceLocator.GetInstance<IStartupService>();
             return Json(new
             {
                 startups = service.GetPopularStartups()

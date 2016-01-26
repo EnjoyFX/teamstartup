@@ -1,23 +1,23 @@
 ﻿<div data-ng-controller="TrandingStartupsController as controller" >
     <div class="startup_cell" data-ng-repeat="startup in controller.startups" >
-        <img class="startup_img" ng-src="~/Styles/images/tmp/{{startup.Logo}}" alt="Education">
+        <img class="startup_img" ng-src="{{startup.LogoUrl}}" alt="Education">
         <div class="startup_title">{{startup.Title}}</div>
-        <img class="face_startuper" ng-src="~/Styles/images/tmp/{{startup.Startuper.Photo}}">
+        <img class="face_startuper" ng-src="{{startup.Startuper.PhotoUrl}}">
         <div class="line_cell">
             <div class="startuper_name">{{startup.Startuper.Name}}</div>
-            <img class="flag_startup" ng-src="~/Styles/images/tmp/{{startup.Startuper.Counry | lowercase}}.jpg">
+            <img class="flag_startup" ng-src="~/Styles/images/{{startup.Startuper.Counry | lowercase}}.jpg">
             <span class="startuper_likes">{{startup.Startuper.Likes}}</span>
-            <img class="img_like" src="~/Styles/images/tmp/likes.png">
+            <img class="img_like" src="~/Styles/images/likes.png">
             <div class="row"></div>
         </div>
         <div class="startuper_text">Investor</div>
         <div class="investor_name">{{startup.Investor}}</div>
         <div class="row"></div>
         <div class="progress_bar">
-            <div class="progress" style="width:{{ startup.Founded }}%"></div>
+            <div class="progress" style="width:{{ startup.InvestedFunds }}%"></div>
         </div>
         <div class="startup_values">
-            <div class="full_values">{{startup.Founded}}%</div>
+            <div class="full_values">{{startup.InvestedFunds}}%</div>
             <div class="title_values">founded</div>
         </div>
         <div class="startup_values">

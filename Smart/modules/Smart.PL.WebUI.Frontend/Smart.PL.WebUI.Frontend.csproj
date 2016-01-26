@@ -109,6 +109,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DataContent\images\startups\startup1.jpg" />
+    <Content Include="DataContent\images\startups\startup2.jpg" />
+    <Content Include="DataContent\images\startups\startup3.jpg" />
+    <Content Include="DataContent\images\startups\startup4.jpg" />
+    <Content Include="DataContent\images\startups\startup5.jpg" />
+    <Content Include="DataContent\images\startups\startup6.jpg" />
+    <Content Include="DataContent\images\startups\startup7.jpg" />
+    <Content Include="DataContent\images\startups\startup8.jpg" />
+    <Content Include="DataContent\images\talents\face1.jpg" />
+    <Content Include="DataContent\images\talents\talent1.png" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\app\pages\home\call-to-action.controller.js" />
     <Content Include="Scripts\app\pages\home\call-to-action.service.js" />
@@ -903,18 +913,8 @@
     <Content Include="Styles\images\ico_twiter.png" />
     <Content Include="Styles\images\logo.gif" />
     <Content Include="Styles\images\magnifying_glass.gif" />
-    <Content Include="Styles\images\tmp\face1.jpg" />
-    <Content Include="Styles\images\tmp\talent1.png" />
-    <Content Include="Styles\images\tmp\usa.jpg" />
-    <Content Include="Styles\images\tmp\likes.png" />
-    <Content Include="Styles\images\tmp\startup1.jpg" />
-    <Content Include="Styles\images\tmp\startup2.jpg" />
-    <Content Include="Styles\images\tmp\startup3.jpg" />
-    <Content Include="Styles\images\tmp\startup4.jpg" />
-    <Content Include="Styles\images\tmp\startup5.jpg" />
-    <Content Include="Styles\images\tmp\startup6.jpg" />
-    <Content Include="Styles\images\tmp\startup7.jpg" />
-    <Content Include="Styles\images\tmp\startup8.jpg" />
+    <Content Include="Styles\images\usa.jpg" />
+    <Content Include="Styles\images\likes.png" />
     <Content Include="Styles\style.css" />
     <Content Include="Views\Home\_Statistic.cshtml" />
     <Content Include="Views\Home\_Talents.cshtml" />
@@ -973,8 +973,6 @@
     <Folder Include="DataContent\images\investors\" />
     <Folder Include="DataContent\images\job-markets\" />
     <Folder Include="DataContent\images\startup-markets\" />
-    <Folder Include="DataContent\images\startups\" />
-    <Folder Include="DataContent\images\talents\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\app\shared\" />
     <Folder Include="Styles\fonts\" />

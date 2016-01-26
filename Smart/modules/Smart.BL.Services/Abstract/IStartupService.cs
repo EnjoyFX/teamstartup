@@ -10,5 +10,9 @@ namespace Smart.BL.Services.Abstract
     public interface IStartupService
     {
         IEnumerable<StartupEntity> GetTopRated();
+
+        IEnumerable<StartupEntity> GetTrandingStartups();
+
+        IEnumerable<StartupEntity> GetPopularStartups();
     }
 }

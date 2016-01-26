@@ -8,7 +8,7 @@ namespace Smart.BL.Entities
 {
     public class Startuper
     {
-        public string Photo { get; set; }
+        public string PhotoUrl { get; set; }
 
         public string Name { get; set; }
 

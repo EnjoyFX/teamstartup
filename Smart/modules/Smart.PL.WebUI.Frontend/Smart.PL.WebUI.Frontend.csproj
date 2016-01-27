@@ -109,6 +109,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Roslyn\csc.exe" />
+    <Content Include="bin\Roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\Roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\Roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\Roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\Roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\Roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\Roslyn\vbc.exe" />
+    <Content Include="bin\Roslyn\VBCSCompiler.exe" />
+    <Content Include="DataContent\images\startup-markets\consumer_internet.png" />
+    <Content Include="DataContent\images\startup-markets\education.png" />
+    <Content Include="DataContent\images\startup-markets\entertaim.png" />
+    <Content Include="DataContent\images\startup-markets\E_comerse.png" />
+    <Content Include="DataContent\images\startup-markets\fin_serv.png" />
+    <Content Include="DataContent\images\startup-markets\Hardware.png" />
+    <Content Include="DataContent\images\startup-markets\helthcare.png" />
+    <Content Include="DataContent\images\startup-markets\software.png" />
     <Content Include="DataContent\images\startups\startup1.jpg" />
     <Content Include="DataContent\images\startups\startup2.jpg" />
     <Content Include="DataContent\images\startups\startup3.jpg" />
@@ -123,6 +140,10 @@
     <Content Include="Scripts\app\pages\home\call-to-action.controller.js" />
     <Content Include="Scripts\app\pages\home\call-to-action.service.js" />
     <Content Include="Scripts\app\pages\home\home.controller.js" />
+    <Content Include="bin\Roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\Roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\Roslyn\VBCSCompiler.exe.config" />
+    <None Include="Properties\PublishProfiles\dev.pubxml" />
     <None Include="Scripts\libs\jQuery\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\app\pages\home\popular-startup.controller.js" />
     <Content Include="Scripts\app\pages\home\popular-startup.service.js" />
@@ -959,6 +980,7 @@
     <Content Include="Views\Home\_TrandingStartups.cshtml" />
     <Content Include="Views\Home\_PopularStartups.cshtml" />
     <Content Include="Views\Home\_StartupMarkets.cshtml" />
+    <Content Include="Styles\fonts\roboto.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -972,10 +994,8 @@
     <Folder Include="DataContent\images\contractors\" />
     <Folder Include="DataContent\images\investors\" />
     <Folder Include="DataContent\images\job-markets\" />
-    <Folder Include="DataContent\images\startup-markets\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\app\shared\" />
-    <Folder Include="Styles\fonts\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Smart.BL.Entities\Smart.BL.Entities.csproj">

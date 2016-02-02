@@ -56,12 +56,4 @@
 .flip-container.flip .flipper {
     transform: rotateY(180deg);
 }
-.back {
-    display: inline-block;
-    width: 265px;
-    height: 450px;
-    margin-right: -20px;
-    background: #040522;
-    color: white;
-    border-radius: 7px;
-}
+

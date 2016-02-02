@@ -5,20 +5,22 @@
         <a href="#" class="botton_all">See more...</a>
         <div class="row"></div>
         <div class="botton_started_categories butt1">
-            {{ controller.descriptions.LaunchStartupDescription }}
+            <div class="vert_text_started">
+                {{ controller.descriptions.LaunchStartupDescription }}
+            </div>
         </div>
         <div class="botton_started_categories">
-            <div class="botton_block_get_start butt2">
-                <a href='@Url.Action("Index", "TalentRegistration")' class="link-button">Find your Job</a>
-            </div>
+            <a href='@Url.Action("Index", "TalentRegistration")' class="botton_block_get_start butt2">Find your Job</a>
         </div>
         <div class="botton_started_categories butt3">
-            {{ controller.descriptions.FindYourJobDescription }}
+            <div class="vert_text_started">
+                {{ controller.descriptions.FindYourJobDescription }}
+            </div>
         </div>
         <div class="botton_started_categories">
-            <div class="botton_block_get_start butt4">
+            <a href="#" class="botton_block_get_start butt4">
                 Start to Invest
-            </div>
+            </a>
         </div>
         <div class="bar_triangle">
             <div class="triangle-down trian1"></div>
@@ -27,22 +29,28 @@
             <div class="triangle-up trian4"></div>
         </div>
         <div class="botton_started_categories">
-            <div class="botton_block_get_start butt1">
+            <a href="#" class="botton_block_get_start butt1">
                 Launch Startup
-            </div>
+            </a>
         </div>
 
         <div class="botton_started_categories butt2">
-            {{ controller.descriptions.PostJobDescription }}
+            <div class="vert_text_started">
+                {{ controller.descriptions.PostJobDescription }}
+            </div>
         </div>
         <div class="botton_started_categories">
-            <div class="botton_block_get_start butt3">
+            <a href="#" class="botton_block_get_start butt3">
                 Post a Job
-            </div>
+            </a>
         </div>
 
         <div class="botton_started_categories butt4">
-            {{ controller.descriptions.StartToInvestDescription }}
+            <div class="vert_text_started">
+                {{ controller.descriptions.StartToInvestDescription }}
+            </div>
         </div>
+        <div class="row"></div>
     </div>
+    <div class="row"></div>
 </div>

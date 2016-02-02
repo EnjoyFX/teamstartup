@@ -64,7 +64,9 @@ namespace Smart.BL.Services.Concrete
                     Backers = 123,
                     DaysToGo = 12,
                     Status = "Pre-seed",
-                    Categories = new List<string> { "IoS", ".NET", "Hardware"}
+                    Categories = new List<string> { "IoS", ".NET", "Hardware"},
+                    BackTitle = "EVO : The Ultimate Companion for your smartphone",
+                    BackContent = @"Smartphones are indispensable and unavoidable in modern day life, but they also have the nasty habit of running out of power when you need them the most! Whether you&#8217;re about to send an important email, or you&#8217;re updating your Facebook status at the end of... "
                 },
                 new StartupEntity {
                     Id = 2,
@@ -82,7 +84,9 @@ namespace Smart.BL.Services.Concrete
                     Backers = 78,
                     DaysToGo = 10,
                     Status = "Pre-seed",
-                    Categories = new List<string> { "IoS", "WEB", "PHP", "Hardware"}
+                    Categories = new List<string> { "IoS", "WEB", "PHP", "Hardware"},
+                    BackTitle = "EVO : The Ultimate Companion for your smartphone",
+                    BackContent = @"Smartphones are indispensable and unavoidable in modern day life, but they also have the nasty habit of running out of power when you need them the most! Whether you&#8217;re about to send an important email, or you&#8217;re updating your Facebook status at the end of... "
                 },
                 new StartupEntity {
                     Id = 3,
@@ -100,7 +104,9 @@ namespace Smart.BL.Services.Concrete
                     Backers = 157,
                     DaysToGo = 5,
                     Status = "Pre-seed",
-                    Categories = new List<string> { "Ruby", "WEB"}
+                    Categories = new List<string> { "Ruby", "WEB"},
+                    BackTitle = "EVO : The Ultimate Companion for your smartphone",
+                    BackContent = @"Smartphones are indispensable and unavoidable in modern day life, but they also have the nasty habit of running out of power when you need them the most! Whether you&#8217;re about to send an important email, or you&#8217;re updating your Facebook status at the end of... "
                 },
                 new StartupEntity {
                     Id = 4,
@@ -118,7 +124,9 @@ namespace Smart.BL.Services.Concrete
                     Backers = 57,
                     DaysToGo = 17,
                     Status = "Pre-seed",
-                    Categories = new List<string> { "IoS", "PHP", "Python"}
+                    Categories = new List<string> { "IoS", "PHP", "Python"},
+                    BackTitle = "EVO : The Ultimate Companion for your smartphone",
+                    BackContent = @"Smartphones are indispensable and unavoidable in modern day life, but they also have the nasty habit of running out of power when you need them the most! Whether you&#8217;re about to send an important email, or you&#8217;re updating your Facebook status at the end of... "
                 }
             };
         }

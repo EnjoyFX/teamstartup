@@ -1,52 +1,80 @@
 ﻿<div data-ng-controller="TalentsController as controller">
-    <div class="talents_cell" data-ng-repeat="talent in controller.talents">
-        <img class="img_talents" ng-src="{{talent.PhotoUrl}}">
-        <div class="talent_title_text">
-            Ronald Brin
-        </div>
-        <img class="flag_startup" ng-src="~/Styles/images/{{talent.Country | lowercase}}.jpg">
-        <div class="row"></div>
-        <div class="talent_skil_text">
-            {{talent.Title}}
-        </div>
-        <div class="talent_price_text">{{talent.Rate | currency:"$":0}}</div>
-        <div class="talent_price_time">/hr</div>
-        <div class="row"></div>
-        <div class="talent_job_success">Job Success</div>
-        <div class="talent_percent_success">{{talent.PercentSuccess}}%</div>
-        <div class="progress_bar">
-            <div class="progress" style="width:{{ talent.PercentSuccess }}%"></div>
-        </div>
-        <div class="statistic">
-            <div class="statistic_title">Work history</div>
-            <div class="statistic_value">{{talent.Jobs}}</div>
-            <div class="statistic_text">jobs</div>
-            <div class="row"></div>
-            <div class="statistic_title">Availability</div>
-            <div class="statistic_value">{{talent.Availability}}</div>
-            <div class="statistic_text">hrs per week</div>
-            <div class="row"></div>
-            <div class="statistic_title">Responce time</div>
-            <div class="statistic_value">{{talent.ResponceTime}}</div>
-            <div class="statistic_text">hrs</div>
-            <div class="row"></div>
-            <div class="statistic_title">Tests </div>
-            <div class="statistic_value">{{talent.Tests}} </div>
-            <div class="statistic_text">(</div>
-            <div class="statistic_value">{{talent.TestsSuccess}}%</div>
-            <div class="statistic_text"> success)</div>
-            <div class="row"></div>
-            <div class="statistic_title">{{talent.Language}} </div>
-            <div class="statistic_value">{{talent.LanguageLevel}} </div>
-            <div class="row"></div>
-        </div>
-        <div class="row"></div>
-        <div class="member_of">Member of</div>
-        <div class="member_corporation">{{talent.MemberOfCorporation}}</div>
-        <div class="row"></div>
-        <div class="experienced_in">
-            <div class="talent_experience">Experienced in</div>
-            <div class="experience" data-ng-repeat="item in talent.Categories">{{item}}</div>
+    <div class="flip-container" data-ng-repeat="talent in controller.talents">
+        <div class="flipper">
+            <div class="front">
+                <div class="talents_cell">
+                    <img class="img_talents" ng-src="{{talent.PhotoUrl}}">
+                    <div class="talent_title_text">
+                        Ronald Brin
+                    </div>
+                    <img class="flag_startup" ng-src="{{talent.FlagUrl}}">
+                    <div class="row"></div>
+                    <div class="talent_skil_text">
+                        {{talent.Title}}
+                    </div>
+                    <div class="talent_price_text">{{talent.Rate | currency:"$":0}}</div>
+                    <div class="talent_price_time">/hr</div>
+                    <div class="row"></div>
+                    <div class="talent_job_success">Job Success</div>
+                    <div class="talent_percent_success">{{talent.PercentSuccess}}%</div>
+                    <div class="progress_bar">
+                        <div class="progress" style="width:{{ talent.PercentSuccess }}%"></div>
+                    </div>
+                    <div class="statistic">
+                        <div class="statistic_title">Work history</div>
+                        <div class="statistic_value">{{talent.Jobs}}</div>
+                        <div class="statistic_text">jobs</div>
+                        <div class="row"></div>
+                        <div class="statistic_title">Availability</div>
+                        <div class="statistic_value">{{talent.Availability}}</div>
+                        <div class="statistic_text">hrs per week</div>
+                        <div class="row"></div>
+                        <div class="statistic_title">Responce time</div>
+                        <div class="statistic_value">{{talent.ResponceTime}}</div>
+                        <div class="statistic_text">hrs</div>
+                        <div class="row"></div>
+                        <div class="statistic_title">Tests </div>
+                        <div class="statistic_value">{{talent.Tests}} </div>
+                        <div class="statistic_text">(</div>
+                        <div class="statistic_value">{{talent.TestsSuccess}}%</div>
+                        <div class="statistic_text"> success)</div>
+                        <div class="row"></div>
+                        <div class="statistic_title">{{talent.Language}} </div>
+                        <div class="statistic_value">{{talent.LanguageLevel}} </div>
+                        <div class="row"></div>
+                    </div>
+                    <div class="row"></div>
+                    <div class="member_of">Member of</div>
+                    <div class="member_corporation">{{talent.MemberOfCorporation}}</div>
+                    <div class="row"></div>
+                    <div class="experienced_in">
+                        <div class="talent_experience">Experienced in</div>
+                        <div class="experience" data-ng-repeat="item in talent.Categories">{{item}}</div>
+                    </div>
+                    <div class="row"></div>
+                </div>
+            </div>
+            <div class="back">
+                <div class="back_title">{{talent.BackTitle}}</div>
+                <a href="#" class="back_content">
+                    {{talent.BackContent}}
+                    <span class="green_text"> Click cell for more info >></span>
+                    <div class="row"></div>
+                </a>
+
+                <a href="#" class="back_button">
+                    <div class="back_icon icon_See_profile"></div>
+                    See Profile
+                </a>
+                <a href="#" class="back_button">
+                    <div class="back_icon icon_Massege"></div>
+                    Send Message
+                </a>
+                <a href="#" class="back_button">
+                    <div class="back_icon icon_Save"></div>
+                    Save
+                </a>
+            </div>
         </div>
     </div>
 </div>

@@ -1,36 +1,70 @@
-﻿<div data-ng-controller="TrandingStartupsController as controller" >
-    <div class="startup_cell" data-ng-repeat="startup in controller.startups" >
-        <img class="startup_img" ng-src="{{startup.LogoUrl}}" alt="Education">
-        <div class="startup_title">{{startup.Title}}</div>
-        <img class="face_startuper" ng-src="{{startup.Startuper.PhotoUrl}}">
-        <div class="line_cell">
-            <div class="startuper_name">{{startup.Startuper.Name}}</div>
-            <img class="flag_startup" ng-src="~/Styles/images/{{startup.Startuper.Counry | lowercase}}.jpg">
-            <span class="startuper_likes">{{startup.Startuper.Likes}}</span>
-            <img class="img_like" src="~/Styles/images/likes.png">
-            <div class="row"></div>
-        </div>
-        <div class="startuper_text">Investor</div>
-        <div class="investor_name">{{startup.Investor}}</div>
-        <div class="row"></div>
-        <div class="progress_bar">
-            <div class="progress" style="width:{{ startup.InvestedFunds }}%"></div>
-        </div>
-        <div class="startup_values">
-            <div class="full_values">{{startup.InvestedFunds}}%</div>
-            <div class="title_values">founded</div>
-        </div>
-        <div class="startup_values">
-            <div class="full_values">{{startup.Pladged| currency:"$":0}}</div>
-            <div class="title_values">pladged</div>
-        </div>
-        <div class="startup_values">
-            <div class="full_values">{{startup.Backers}}</div>
-            <div class="title_values">backers</div>
-        </div>
-        <div class="startup_values">
-            <div class="full_values">{{startup.DaysToGo}}</div>
-            <div class="title_values">days to go</div>
+﻿<div data-ng-controller="TrandingStartupsController as controller">
+    <div class="flip-container" data-ng-repeat="startup in controller.startups">
+        <div class="flipper">
+            <div class="front">
+                <div class="startup_cell">
+                    <img class="startup_img" ng-src="{{startup.LogoUrl}}" alt="Education">
+                    <div class="startup_title">{{startup.Title}}</div>
+                    <img class="face_startuper" ng-src="{{startup.Startuper.PhotoUrl}}">
+                    <div class="line_cell">
+                        <div class="startuper_name">{{startup.Startuper.Name}}</div>
+                        <img class="flag_startup" ng-src="~/Styles/images/{{startup.Startuper.Counry | lowercase}}.jpg">
+                        <span class="startuper_likes">{{startup.Startuper.Likes}}</span>
+                        <img class="img_like" src="~/Styles/images/likes.png">
+                        <div class="row"></div>
+                    </div>
+                    <div class="startuper_text">Investor</div>
+                    <div class="investor_name">{{startup.Investor}}</div>
+                    <div class="row"></div>
+                    <div class="progress_bar">
+                        <div class="progress" style="width:{{ startup.InvestedFunds }}%"></div>
+                    </div>
+                    <div class="startup_values">
+                        <div class="full_values">{{startup.InvestedFunds}}%</div>
+                        <div class="title_values">founded</div>
+                    </div>
+                    <div class="startup_values">
+                        <div class="full_values">{{startup.Pladged| currency:"$":0}}</div>
+                        <div class="title_values">pladged</div>
+                    </div>
+                    <div class="startup_values">
+                        <div class="full_values">{{startup.Backers}}</div>
+                        <div class="title_values">backers</div>
+                    </div>
+                    <div class="startup_values">
+                        <div class="full_values">{{startup.DaysToGo}}</div>
+                        <div class="title_values">days to go</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back">
+                <div class="back_title">{{startup.BackTitle}}</div>
+                <a href="#" class="back_content">
+                    {{startup.BackContent}}
+                    <span class="green_text"> Click cell for more info >></span>
+                    <div class="row"></div>
+                </a>
+
+                <a href="#" class="back_button">
+                    <div class="back_icon icon_Follow"></div>
+                    Follow
+                </a>
+                <a href="#" class="back_button">
+                    <div class="back_icon icon_Massege"></div>
+                    Send Message
+                </a>
+                <a href="#" class="back_button">
+                    <div class="back_icon icon_Share"></div>
+                    Share
+                </a>
+                <a href="#" class="back_button">
+                    <div class="back_icon icon_Like"></div>
+                    Like
+                </a>
+            </div>
+
         </div>
     </div>
 </div>
+

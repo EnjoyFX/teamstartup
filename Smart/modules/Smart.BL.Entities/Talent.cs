@@ -14,6 +14,8 @@ namespace Smart.BL.Entities
 
         public string Country { get; set; }
 
+        public string FlagUrl { get; set; }
+
         public string Title { get; set; }
 
         public int Rate { get; set; }
@@ -37,5 +39,9 @@ namespace Smart.BL.Entities
         public string MemberOfCorporation { get; set; }
 
         public IEnumerable<string> Categories { get; set; }
+
+        public string BackTitle { get; set; }
+
+        public string BackContent { get; set; }
     }
 }

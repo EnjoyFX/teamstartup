@@ -28,6 +28,8 @@
     <script src="~/Scripts/app/pages/home/popular-startup.controller.js"></script>
     <script src="~/Scripts/app/pages/home/talent.service.js"></script>
     <script src="~/Scripts/app/pages/home/talent.controller.js"></script>
+    
+    <link href="~/Styles/nia-flipping.css" rel="stylesheet" />
 }
 
 @section Header
@@ -40,34 +42,33 @@
     @Html.Partial("_PresentationBar")
     @Html.Partial("_CallToAction")
     @Html.Partial("_ContactUs")
-    <div class="row"></div>
-    <div class="content" id="startup_area">
+
+    <div class="content clearfix" id="startup_area">
         <div class="center">
             <div class="row"></div>
             <div class="title_area">SMARTUP CELL</div>
             <div class="row"></div>
             <div class="title_bold_area">TRENDING STARTUPS</div>
-            <div class="botton_all">Learn more...</div>
+            <a href="#" class="botton_all">See more...</a>
             <div class="row"></div>
             @Html.Partial("_TrandingStartups")
         </div>
     </div>
-    <div class="row"></div>
-    <div class="content" id="startup_popular_area">
+    <div class="content clearfix" id="startup_popular_area">
         <div class="center">
             <div class="row"></div>
             <div class="title_bold_area">POPULAR STARTUPS</div>
-            <div class="botton_all">Learn more...</div>
+            <div class="botton_all">See more...</div>
             <div class="row"></div>
             @Html.Partial("_PopularStartups")
         </div>
     </div>
     <div class="row"></div>
-    <div class="content" id="notib_investors_area">
+    <div class="content clearfix" id="notib_investors_area">
         <div class="center">
             <div class="row"></div>
             <div class="title_area">NOTIBLE INVESTORS</div>
-            <div class="botton_all">Learn more...</div>
+            <div class="botton_all">See more...</div>
             <div class="row"></div>
 
             @*Notible Investors*@
@@ -75,13 +76,13 @@
         </div>
     </div>
     <div class="row"></div>
-    <div class="content" id="talents_area">
+    <div class="content clearfix" id="talents_area">
         <div class="center">
             <div class="row"></div>
             <div class="title_area">TALENTS CELLS</div>
             <div class="row"></div>
             <div class="title_bold_area">TOP RATED TALENTS</div>
-            <div class="botton_all">Learn more...</div>
+            <div class="botton_all">See more...</div>
             <div class="row"></div>
             @Html.Partial("_Talents")
         </div>

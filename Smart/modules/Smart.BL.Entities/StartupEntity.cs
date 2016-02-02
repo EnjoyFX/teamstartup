@@ -29,5 +29,9 @@ namespace Smart.BL.Entities
         public int Backers { get; set; }
 
         public int DaysToGo { get; set; }
+
+        public string BackTitle { get; set; }
+
+        public string BackContent { get; set; }
     }
 }

@@ -16,12 +16,14 @@ namespace Smart.BL.Services.Concrete
         public IEnumerable<Talent> GetTalents()
         {
             string talentCategory = "talents";
+            string flagCategory = "flags";
 
             return new List<Talent> {
                 new Talent {
                     Name = "Ronald Brin",
                     PhotoUrl = _imageRepository.GetUrl(talentCategory, "talent1.png"),
                     Country = "USA",
+                    FlagUrl = _imageRepository.GetUrl(flagCategory, "usa.jpg"),
                     Title = "Search Arvhitect Guru UX Designer",
                     Rate = 80,
                     PercentSuccess = 95,
@@ -33,12 +35,15 @@ namespace Smart.BL.Services.Concrete
                     Language = "English",
                     LanguageLevel = "Fluent",
                     MemberOfCorporation = "Alphabet Corporation",
-                    Categories = new List<string> { "HTML5", "JavaScript", ".NET" }
+                    Categories = new List<string> { "HTML5", "JavaScript", ".NET" },
+                    BackTitle = "The best aggregation of angel investors in the world",
+                    BackContent = "Smartphones are indispensable and unavoidable in modern day life, but they also have the nasty habit of running out of power when you need them the most! Whether you&#8217;re about to send an important email, or you&#8217;re updating your Facebook status at the end of... "
                 },
                  new Talent {
                     Name = "Ronald Brin",
                     PhotoUrl = _imageRepository.GetUrl(talentCategory, "talent1.png"),
                     Country = "USA",
+                    FlagUrl = _imageRepository.GetUrl(flagCategory, "usa.jpg"),
                     Title = "Search Arvhitect Guru UX Designer",
                     Rate = 85,
                     PercentSuccess = 85,
@@ -50,12 +55,15 @@ namespace Smart.BL.Services.Concrete
                     Language = "English",
                     LanguageLevel = "Fluent",
                     MemberOfCorporation = "Alphabet Corporation",
-                    Categories = new List<string> { "Ruby", "JavaScript", ".NET" }
+                    Categories = new List<string> { "Ruby", "JavaScript", ".NET" },
+                    BackTitle = "The best aggregation of angel investors in the world",
+                    BackContent = "Smartphones are indispensable and unavoidable in modern day life, but they also have the nasty habit of running out of power when you need them the most! Whether you&#8217;re about to send an important email, or you&#8217;re updating your Facebook status at the end of... "
                 },
                   new Talent {
                     Name = "Ronald Brin",
                     PhotoUrl = _imageRepository.GetUrl(talentCategory, "talent1.png"),
                     Country = "USA",
+                    FlagUrl = _imageRepository.GetUrl(flagCategory, "usa.jpg"),
                     Title = "Search Arvhitect Guru UX Designer",
                     Rate = 90,
                     PercentSuccess = 91,
@@ -67,12 +75,15 @@ namespace Smart.BL.Services.Concrete
                     Language = "English",
                     LanguageLevel = "Fluent",
                     MemberOfCorporation = "Alphabet Corporation",
-                    Categories = new List<string> { "Java", "JavaScript", ".NET" }
+                    Categories = new List<string> { "Java", "JavaScript", ".NET" },
+                    BackTitle = "The best aggregation of angel investors in the world",
+                    BackContent = "Smartphones are indispensable and unavoidable in modern day life, but they also have the nasty habit of running out of power when you need them the most! Whether you&#8217;re about to send an important email, or you&#8217;re updating your Facebook status at the end of... "
                 },
                    new Talent {
                     Name = "Ronald Brin",
                     PhotoUrl = _imageRepository.GetUrl(talentCategory, "talent1.png"),
                     Country = "USA",
+                    FlagUrl = _imageRepository.GetUrl(flagCategory, "usa.jpg"),
                     Title = "Search Arvhitect Guru UX Designer",
                     Rate = 100,
                     PercentSuccess = 100,
@@ -84,7 +95,9 @@ namespace Smart.BL.Services.Concrete
                     Language = "English",
                     LanguageLevel = "Fluent",
                     MemberOfCorporation = "Alphabet Corporation",
-                    Categories = new List<string> { "HTML5", "JavaScript", ".NET" }
+                    Categories = new List<string> { "HTML5", "JavaScript", ".NET" },
+                    BackTitle = "The best aggregation of angel investors in the world",
+                    BackContent = "Smartphones are indispensable and unavoidable in modern day life, but they also have the nasty habit of running out of power when you need them the most! Whether you&#8217;re about to send an important email, or you&#8217;re updating your Facebook status at the end of... "
                 }
             };
         }

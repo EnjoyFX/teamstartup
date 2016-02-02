@@ -118,24 +118,24 @@
     <Content Include="bin\Roslyn\System.Reflection.Metadata.dll" />
     <Content Include="bin\Roslyn\vbc.exe" />
     <Content Include="bin\Roslyn\VBCSCompiler.exe" />
-    <Content Include="DataContent\images\startup-markets\consumer_internet.png" />
-    <Content Include="DataContent\images\startup-markets\education.png" />
-    <Content Include="DataContent\images\startup-markets\entertaim.png" />
-    <Content Include="DataContent\images\startup-markets\E_comerse.png" />
-    <Content Include="DataContent\images\startup-markets\fin_serv.png" />
-    <Content Include="DataContent\images\startup-markets\Hardware.png" />
-    <Content Include="DataContent\images\startup-markets\helthcare.png" />
-    <Content Include="DataContent\images\startup-markets\software.png" />
-    <Content Include="DataContent\images\startups\startup1.jpg" />
-    <Content Include="DataContent\images\startups\startup2.jpg" />
-    <Content Include="DataContent\images\startups\startup3.jpg" />
-    <Content Include="DataContent\images\startups\startup4.jpg" />
-    <Content Include="DataContent\images\startups\startup5.jpg" />
-    <Content Include="DataContent\images\startups\startup6.jpg" />
-    <Content Include="DataContent\images\startups\startup7.jpg" />
-    <Content Include="DataContent\images\startups\startup8.jpg" />
-    <Content Include="DataContent\images\talents\face1.jpg" />
-    <Content Include="DataContent\images\talents\talent1.png" />
+    <Content Include="data_content\images\startup-markets\consumer_internet.png" />
+    <Content Include="data_content\images\startup-markets\education.png" />
+    <Content Include="data_content\images\startup-markets\entertaim.png" />
+    <Content Include="data_content\images\startup-markets\E_comerse.png" />
+    <Content Include="data_content\images\startup-markets\fin_serv.png" />
+    <Content Include="data_content\images\startup-markets\Hardware.png" />
+    <Content Include="data_content\images\startup-markets\helthcare.png" />
+    <Content Include="data_content\images\startup-markets\software.png" />
+    <Content Include="data_content\images\startups\startup1.jpg" />
+    <Content Include="data_content\images\startups\startup2.jpg" />
+    <Content Include="data_content\images\startups\startup3.jpg" />
+    <Content Include="data_content\images\startups\startup4.jpg" />
+    <Content Include="data_content\images\startups\startup5.jpg" />
+    <Content Include="data_content\images\startups\startup6.jpg" />
+    <Content Include="data_content\images\startups\startup7.jpg" />
+    <Content Include="data_content\images\startups\startup8.jpg" />
+    <Content Include="data_content\images\talents\face1.jpg" />
+    <Content Include="data_content\images\talents\talent1.png" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\app\pages\home\call-to-action.controller.js" />
     <Content Include="Scripts\app\pages\home\call-to-action.service.js" />
@@ -929,13 +929,15 @@
     <Content Include="Scripts\app\pages\home\startup.service.js" />
     <Content Include="Scripts\app\pages\home\home.module.js" />
     <Content Include="Scripts\app\pages\home\investor.service.js" />
+    <Content Include="Styles\images\elips.png" />
     <Content Include="Styles\images\ico_mail.png" />
-    <Content Include="Styles\images\ico_pcc.png" />
+    <Content Include="Styles\images\ico_rss.png" />
     <Content Include="Styles\images\ico_twiter.png" />
+    <Content Include="Styles\images\left_arrow.png" />
     <Content Include="Styles\images\logo.gif" />
     <Content Include="Styles\images\magnifying_glass.gif" />
-    <Content Include="Styles\images\usa.jpg" />
     <Content Include="Styles\images\likes.png" />
+    <Content Include="Styles\images\right_arrow.png" />
     <Content Include="Styles\style.css" />
     <Content Include="Views\Home\_Statistic.cshtml" />
     <Content Include="Views\Home\_Talents.cshtml" />
@@ -981,6 +983,8 @@
     <Content Include="Views\Home\_PopularStartups.cshtml" />
     <Content Include="Views\Home\_StartupMarkets.cshtml" />
     <Content Include="Styles\fonts\roboto.ttf" />
+    <Content Include="Views\Home\_Startups.cshtml" />
+    <Content Include="Views\Home\_ContactUs.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -990,10 +994,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="DataContent\images\consortiums\" />
-    <Folder Include="DataContent\images\contractors\" />
-    <Folder Include="DataContent\images\investors\" />
-    <Folder Include="DataContent\images\job-markets\" />
+    <Folder Include="data_content\images\consortiums\" />
+    <Folder Include="data_content\images\contractors\" />
+    <Folder Include="data_content\images\investors\" />
+    <Folder Include="data_content\images\job-markets\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\app\shared\" />
   </ItemGroup>

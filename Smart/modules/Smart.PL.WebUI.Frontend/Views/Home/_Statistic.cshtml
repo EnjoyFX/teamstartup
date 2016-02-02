@@ -1,14 +1,16 @@
 ﻿<div class="content" id="main_statistic" data-ng-controller="StatisticController as controller">
-    <div id="left_text">
-        <div data-ng-repeat="item in controller.statisticLeft">
-            <span class="blue_text">{{ item.Value | currency:"$":0 }}</span> {{item.Text}}
+    <div class="center">
+        <div id="left_text">
+            <div data-ng-repeat="item in controller.statisticLeft">
+                <span class="blue_text">{{ item.Value | currency:"$":0 }}</span><span>{{ item.Text }}</span>
+            </div>
         </div>
-    </div>
-    <div id="bottom_started">Get started</div>
-    <div id="right_text">
-        <div data-ng-repeat="item in controller.statisticRight">
-            <span class="blue_text">{{ item.Value | currency:"$":0 }}</span> {{item.Text}}
+        <a href="#" id="bottom_started">Get started</a>
+        <div id="right_text">
+            <div data-ng-repeat="item in controller.statisticRight">
+                <span class="blue_text">{{ item.Value | currency:"$":0 }}</span><span>{{ item.Text }}</span>
+            </div>
         </div>
+        <div class="row"></div>
     </div>
-    <div class="row"></div>
 </div>

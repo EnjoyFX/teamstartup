@@ -22,15 +22,15 @@
 
 </head>
 <body>
-    <div>
+    <header>
         @RenderSection("Header", false)
-    </div>
-    <div>
+    </header>
+    <section>
         @RenderBody()
-    </div>
-    <div>
+    </section>
+    <footer>
         @RenderSection("Footer", false)
-    </div>
+    </footer>
     @RenderSection("FootScripts", false)
 </body>
 </html>

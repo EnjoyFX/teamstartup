@@ -11,7 +11,7 @@ namespace Smart.PL.WebUI.Frontend.Code.Repositories
     {
         public string GetUrl(string categoryId, string imageId)
         {
-            string imageBaseUrl = VirtualPathUtility.ToAbsolute("~/DataContent/images");            
+            string imageBaseUrl = VirtualPathUtility.ToAbsolute("~/data_content/images");            
             return string.Format("{0}/{1}/{2}", imageBaseUrl, categoryId, imageId);            
         }
     }

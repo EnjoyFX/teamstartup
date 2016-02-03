@@ -1,11 +1,11 @@
 ﻿(function (angular) {
     angular
 	.module("homeModule")
-	.controller("CarouselController", CarouselController);
+	.controller("NotableInvestorController", NotableInvestorController);
 
-    CarouselController.$inject = ['$scope', 'investorService', 'slicingService'];
+    NotableInvestorController.$inject = ['$scope', 'investorService', 'slicingService'];
 
-    function CarouselController($scope, investorService, slicingService) {
+    function NotableInvestorController($scope, investorService, slicingService) {
         var vm = this;
 
         //vm.investors = [];

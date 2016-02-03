@@ -4,6 +4,13 @@
     
 }
 
+@section HeadStyles
+{
+    @*<link rel="stylesheet" href="~/Styles/bootstrap.min.css" />*@    
+    <link rel="stylesheet" href="~/Styles/nia-flipping.css" />
+    <link rel="stylesheet" href="~/Styles/nia-layout.css" />
+}
+
 @section HeadScripts
 {
 
@@ -11,7 +18,14 @@
 
 @section FootScripts
 {    
+    <script src="~/Scripts/libs/angular-ui/ui-bootstrap.js"></script>
+    <script src="~/Scripts/libs/angular-ui/ui-bootstrap-tpls.js"></script>
+   
     <script src="~/Scripts/app/pages/home/home.module.js"></script>
+
+    <script src="~/Scripts/app/shared/slicing.service.js"></script>
+    <script src="~/Scripts/app/shared/resizable.directive.js"></script>
+
     <script src="~/Scripts/app/pages/home/home.controller.js"></script>
     <script src="~/Scripts/app/pages/home/presentation-bar.controller.js"></script>
     <script src="~/Scripts/app/pages/home/startup-market.service.js"></script>
@@ -28,19 +42,9 @@
     <script src="~/Scripts/app/pages/home/popular-startup.controller.js"></script>
     <script src="~/Scripts/app/pages/home/talent.service.js"></script>
     <script src="~/Scripts/app/pages/home/talent.controller.js"></script>
-    <script src="~/Scripts/libs/angularjs/angular-animate.js"></script>
+    <script src="~/Scripts/app/pages/home/notable-investor.controller.js"></script>    
 
-    <script src="~/Scripts/angular-ui/ui-bootstrap.min.js"></script>
-    <script src="~/Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
-    <script src="~/Scripts/app/shared/slicing.service.js"></script>
-    <script src="~/Scripts/app/shared/carousel.controller.js"></script>
-    <script src="~/Scripts/app/pages/home/investor.service.js"></script>
-    <script src="~/Scripts/app/shared/resizable.directive.js"></script>
 
-    <link rel="stylesheet" href="~/Styles/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/Styles/reset.css"/>
-    <link rel="stylesheet" href="~/Styles/nia-flipping.css" />
-    <link rel="stylesheet" href="~/Styles/nia-layout.css" />
 }
 
 @section Header
@@ -98,7 +102,7 @@
             @Html.Partial("_Talents")
         </div>
     </div>
-
+</div>
 
 @section Footer
 {

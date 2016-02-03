@@ -1,0 +1,20 @@
+﻿<div id="MFA" ng-controller="CarouselController as controller" resizable>
+    <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+        <uib-slide ng-repeat="slide in controller.slides" active="slide.active" index="slide.id">
+            <ul class="nia-part">
+                <li class="flip-container " ng-repeat="item in slide.items" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                            <div class="avatar" style="background-image: url({{item.PhotoUrl}})"></div>
+                            <div class="quotation">{{item.ShortQuotation}}</div>
+                            <div class="title"><span>{{item.Name}}</span><span>{{item.Position}}</span></div>
+                        </div>
+                        <div class="back">
+                            {{item.LargeQuotation}}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </uib-slide>
+    </uib-carousel>
+</div>

@@ -39,7 +39,7 @@
                     console.log("[presentation-bar.controller] jobMarketService.getMostPopular() failed");
                 });
 
-		    investorService.getNotable()
+		    investorService.getNotableInvestors()
                 .then(function (response) {
                     $scope.$applyAsync(function () {
                         vm.notableInvestors = response.data.notableInvestors;

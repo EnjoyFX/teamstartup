@@ -124,6 +124,17 @@ namespace Smart.PL.WebUI.Frontend.Controllers
         }
 
 
+        [HttpGet]
+        public ActionResult GetInvestors()
+        {
+            IInvestorService service = this.ServiceLocator.GetInstance<IInvestorService>();
+            return Json(new
+            {
+                investors = service.GetNotableInvestors()
+            }, JsonRequestBehavior.AllowGet);
+        }
+
+
         #endregion
 
         #region Helpers

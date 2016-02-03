@@ -2,10 +2,15 @@
 
     angular
         .module("homeModule")
-        .service("investorService", investorService);
+        .factory("investorService", investorService);
 
     function investorService($http) {
-        this.getNotable = function () {
+        var service = {
+            getNotableInvestors: getNotableInvestors
+        };
+        return service;
+
+        function getNotableInvestors() {
             var promise = $http({
                 method: "GET",
                 url: "/Home/GetNotableInvestors",
@@ -13,5 +18,6 @@
             return promise;
         };
     }
+
 
 })(angular);

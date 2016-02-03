@@ -10,5 +10,9 @@ namespace Smart.BL.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string PhotoUrl { get; set; }
+        public string Position { get; set; }
+        public string ShortQuotation { get; set; }
+        public string LargeQuotation { get; set; }
     }
 }

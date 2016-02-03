@@ -1,5 +1,5 @@
 ﻿(function (angular) {
 
-    angular.module("homeModule", []);
+    angular.module("homeModule", ['ngAnimate', 'ui.bootstrap']);
 
 })(angular);

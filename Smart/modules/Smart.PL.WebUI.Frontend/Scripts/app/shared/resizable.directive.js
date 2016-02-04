@@ -14,7 +14,7 @@
             $scope.initializeWindowSize();
             return angular.element($window).bind('resize', function () {
                 $scope.initializeWindowSize();
-                $scope.controller('CarouselController').$apply();
+                $scope.controller('NotableInvestorController').$apply();
                 return $scope.$apply();
             });
         };

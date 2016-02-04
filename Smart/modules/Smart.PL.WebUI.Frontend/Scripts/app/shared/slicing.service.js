@@ -1,6 +1,6 @@
 ﻿(function () {
     angular
-    .module("homeModule")
+    .module("smartModule")
     .factory("slicingService", slicingService);
 
     function slicingService($window) {
